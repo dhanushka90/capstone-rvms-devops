@@ -1,5 +1,5 @@
 # Start with a base image that has Java 17.06 installed
-FROM openjdk:17.0.6
+FROM eclipse-temurin:17.0.6_10-jdk-alpine
 
 # Set the working directory
 WORKDIR /app
