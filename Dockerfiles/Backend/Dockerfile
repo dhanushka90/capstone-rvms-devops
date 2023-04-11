@@ -5,7 +5,7 @@ FROM eclipse-temurin:17.0.6_10-jdk-alpine
 WORKDIR /app
 
 # Copy the jar file into the container
-COPY target/RVMS-Backend-0.0.1-SNAPSHOT.jar.jar app.jar
+COPY capstone-backend-rvms/target/RVMS-Backend-0.0.1-SNAPSHOT.jar.jar app.jar
 
 # Expose the port that the application will run on
 EXPOSE 8080
