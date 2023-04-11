@@ -1,5 +1,5 @@
 # Start with a base image that has Java 17.06 installed
-FROM openjdk:17.0.6-jdk-slim-buster
+FROM openjdk:17.0.6
 
 # Set the working directory
 WORKDIR /app
