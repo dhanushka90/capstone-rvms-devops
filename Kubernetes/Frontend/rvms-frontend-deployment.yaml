@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rvms-frontend
+  namespace: rvms-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rvms-frontend
+  template:
+    metadata:
+      labels:
+        app: rvms-frontend
+    spec:
+      containers:
+      - name: rvms-frontend
+        image: lokugamage186/rvms-frontend:new-feature-4
+        ports:
+        - containerPort: 3000

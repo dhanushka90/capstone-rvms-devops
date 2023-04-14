@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rvms-backend
+  namespace: rvms-app
+  labels:
+    app: rvms-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rvms-backend
+  template:
+    metadata:
+      labels:
+        app: rvms-backend
+    spec:
+      containers:
+        - name: rvms-backend
+          image: lokugamage186/rvms-backend:1.4
+          ports:
+            - containerPort: 8080
