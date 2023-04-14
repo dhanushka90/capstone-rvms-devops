@@ -15,3 +15,5 @@ spec:
     - port: 8080
       targetPort: 8080
       nodePort: 32000
+  externalIPs:
+    - 3.97.194.206
